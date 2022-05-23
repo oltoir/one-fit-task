@@ -18,7 +18,7 @@ Your users should be able to:
 
 ### Filtering
 
-Use the [data.json](./data.json) file to pull the data and then dynamically add the content. You can directly add this to your app or use it as a remote data-source, whichever you please.
+Use the [data.json](one-fit-app/data.json) file to pull the data and then dynamically add the content. You can directly add this to your app or use it as a remote data-source, whichever you please.
 
 To add a filter, the user needs to click on a tag (visible at the right side of listing on Desktops, and visible below listing on mobile devices). Filters work as an "AND" function, i.e. only display the listings that has the all selected filters.
 

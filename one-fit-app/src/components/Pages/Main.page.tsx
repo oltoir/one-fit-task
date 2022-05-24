@@ -61,6 +61,18 @@ const MainPage  = () => {
         }
     }
 
+    let cardStyle
+
+    const cardStylComp = (featured:boolean) =>{
+        if (featured){
+            return cardStyle = classNameGenerator(style.card,style.border_left)
+        }
+        else{
+            return cardStyle = classNameGenerator(style.card)
+        }
+
+    }
+
     const deleteFilter = (filter:string)=>{
         setParams(params.replace(filter,""))
         setfilterTags(params.replace(filter,""))
@@ -84,7 +96,7 @@ const MainPage  = () => {
                 <div className={style.main_page}>
                     {
                         data?.data.map((vacancy: any) => {
-                            return <div className={style.card} key={vacancy['id']}>
+                            return <div className={cardStylComp(vacancy["featured"])} key={vacancy['id']}>
                                 <div className={style.content}>
                                     <div className={style.left_side}>
                                         <div>

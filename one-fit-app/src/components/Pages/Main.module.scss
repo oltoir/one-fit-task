@@ -1,120 +1,270 @@
-.main_page{
-  margin-top: 80px;
-}
-.card{
-  width: 880px;
-  height: 120px;
-  box-shadow: 0px 10px 50px -10px #6ea2a3;
-  border-radius: 4px;
-  background-color: white;
-  margin-bottom: 20px;
+@media (max-width: 1440px) {
+  .main_page {
+    margin-top: 80px;
+  }
+  .card {
+    width: 880px;
+    height: 120px;
+    box-shadow: 0px 10px 50px -10px #6ea2a3;
+    border-radius: 4px;
+    background-color: white;
+    margin-bottom: 20px;
+  }
+
+  .border_left{
+    border-left: 6px solid #6ea2a3;
+  }
+
+  .filter {
+    margin-bottom: 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .clear {
+    justify-self: flex-end;
+    color: #6ea2a3;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .clear:hover {
+    text-decoration: underline;
+  }
+
+  img {
+    width: 88px;
+    height: 88px;
+    margin-right: 20px;
+  }
+
+  .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 0 30px;
+  }
+
+  .left_side {
+    display: flex;
+  }
+
+  .card_row {
+    display: flex;
+    align-items: center;
+  }
+
+  .company_title {
+    color: #6ea2a3;
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  .tag {
+    cursor: pointer;
+    background-color: #F2F9FA;
+    color: #6ea2a3;
+    padding: 8px 8px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-left: 10px;
+    font-size: 12px;
+  }
+
+  .tag:hover {
+    background-color: #6ea2a3;
+    color: white;
+
+  }
+
+  .grey {
+    color: darkgrey;
+    width: 210px;
+    display: flex;
+    font-size: 14px;
+    justify-content: space-between;
+  }
+
+  .position {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+
+  .new {
+    background-color: #6ea2a3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 8px;
+    font-size: 10px;
+    font-weight: bold;
+    width: 40px;
+    height: 20px;
+    margin-left: 12px;
+  }
+  .featured {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 12px;
+    font-size: 10px;
+    font-weight: bold;
+    width: 70px;
+    height: 20px;
+    margin-left: 12px;
+
+  }
+
 }
 
-.filter{
-  margin-bottom: 0;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
+@media (max-width: 375px){
+  .main_page {
+    margin-top: 40px;
+  }
+  .card {
+    width: 340px;
+    height: 250px;
+    box-shadow: 0px 10px 50px -10px #6ea2a3;
+    border-radius: 4px;
+    background-color: white;
+    margin-bottom: 20px;
+  }
 
-.clear{
-  justify-self: flex-end;
-  color: #6ea2a3;
-  font-weight:bold ;
-  cursor: pointer;
-}
+  .filter {
+    margin-bottom: 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 
-.clear:hover{
-  text-decoration: underline;
-}
+  .clear {
+    justify-self: flex-end;
+    color: #6ea2a3;
+    font-weight: bold;
+    cursor: pointer;
+  }
 
-img{
-  width: 88px;
-  height: 88px;
-  margin-right: 20px;
-}
+  .clear:hover {
+    text-decoration: underline;
+  }
 
-.content{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 100%;
-  padding: 0 30px;
-}
+  img {
+    width: 44px;
+    height: 44px;
+    margin-right: 20px;
+  }
 
-.left_side{
-  display: flex;
-}
+  .content {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
 
-.card_row{
-  display: flex;
-  align-items: center;
-}
+  .left_side {
+    display: flex;
+    flex-direction: column;
+  }
 
-.company_title{
-  color: #6ea2a3;
-  font-size: 12px;
-  font-weight: bold;
-}
+  .right_side{
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 1px solid darkgrey;
+    margin-top: 20px;
+  }
 
-.tag{
-  cursor: pointer;
-  background-color: #F2F9FA;
-  color: #6ea2a3;
-  padding: 8px 8px;
-  border-radius: 5px;
-  font-weight: bold;
-  margin-left: 10px;
-  font-size: 12px;
-}
+.right_side .card_row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
 
-.tag:hover{
-  background-color: #6ea2a3;
-  color: white;
+  .company_title {
+    color: #6ea2a3;
+    font-size: 12px;
+    font-weight: bold;
+  }
 
-}
+  .tag {
+    cursor: pointer;
+    background-color: #F2F9FA;
+    color: #6ea2a3;
+    padding: 8px 8px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-right: 10px;
+    margin-left: 0px;
+    margin-top: 10px;
+    font-size: 12px;
+  }
 
-.grey{
-  color: darkgrey;
-  width: 210px;
-  display: flex;
-  font-size: 14px;
-  justify-content: space-between;
-}
+  .tag:hover {
+    background-color: #6ea2a3;
+    color: white;
 
-.position{
-  font-size: 16px;
-  font-weight: bold;
-  margin: 10px 0;
-}
+  }
 
-.new{
-  background-color: #6ea2a3;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  text-transform: uppercase;
-  border-radius: 8px;
-  font-size: 10px;
-  font-weight: bold;
-  width: 40px;
-  height: 20px;
-  margin-left: 12px;
-}
-.featured{
-  background-color: black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  text-transform: uppercase;
-  border-radius: 12px;
-  font-size: 10px;
-  font-weight: bold;
-  width: 70px;
-  height: 20px;
-  margin-left: 12px;
+  .grey {
+    color: darkgrey;
+    width: 210px;
+    display: flex;
+    font-size: 14px;
+    justify-content: space-between;
+  }
+
+  .position {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+
+  .new {
+    background-color: #6ea2a3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 8px;
+    font-size: 10px;
+    font-weight: bold;
+    width: 40px;
+    height: 20px;
+    margin-left: 12px;
+  }
+  .filter .content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .filter .tag{
+    margin-top: 0px;
+  }
+  .featured {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 12px;
+    font-size: 10px;
+    font-weight: bold;
+    width: 70px;
+    height: 20px;
+    margin-left: 12px;
+
+  }
 
 }

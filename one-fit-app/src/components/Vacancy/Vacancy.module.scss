@@ -8,6 +8,12 @@
 
 }
 
+img{
+  width: 88px;
+  height: 88px;
+  margin-right: 20px;
+}
+
 .content{
   display: flex;
   justify-content: space-between;
@@ -18,7 +24,6 @@
 
 .left_side{
   display: flex;
-
 }
 
 .card_row{
@@ -32,6 +37,24 @@
   font-weight: bold;
 }
 
+.tag{
+  cursor: pointer;
+  background-color: #F2F9FA;
+  color: #6ea2a3;
+  padding: 8px 8px;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-left: 10px;
+  font-size: 12px;
+}
+
+.grey{
+  color: darkgrey;
+  width: 210px;
+  display: flex;
+  font-size: 14px;
+  justify-content: space-between;
+}
 
 .position{
   font-size: 16px;

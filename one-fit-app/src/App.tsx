@@ -6,6 +6,7 @@ import {QueryClient, QueryClientProvider} from "react-query";
 const queryClient = new QueryClient()
 
 function App() {
+    let example = 0
   return (
   <QueryClientProvider client={queryClient}>
     <div className="App">

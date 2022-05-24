@@ -3,4 +3,12 @@
   width: 100%;
   display: flex;
   max-height: 156px;
+  height: 156px;
 }
+.header_bg{
+  background: url("../../assets/images/bg-header-desktop.svg");
+  height: 156px;
+  width: 100%;
+  background-repeat: repeat-x;
+}
+
